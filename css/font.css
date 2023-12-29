@@ -22,3 +22,7 @@
   font-family: Ultra-Regular;
   src: url(..//fonts/Ultra-Regular.ttf);
 }
+@font-face {
+  font-family: MontaguSlab-SemiBold;
+  src: url(..//fonts/MontaguSlab-SemiBold.ttf);
+}

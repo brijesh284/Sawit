@@ -62,8 +62,8 @@ h4 {
   margin-bottom: 0px;
   right: 0;
 }
-.member-section .member-image img {
-  margin-left: -15px;
+.member-section .member-image {
+  text-align: center;
 }
 .member-section .member-wrapper {
   width: 335px;
@@ -137,6 +137,7 @@ h4 {
 .event-banner {
   background-color: #f7eedf;
   padding-top: 118px;
+  margin-top: -260px;
 }
 .event-banner .event-banner-inner {
   text-align: center;
@@ -286,7 +287,7 @@ h4 {
 .main-detail-section {
   background-color: #d7cfba;
   padding-top: 160px;
-  padding-bottom: 57px;
+  padding-bottom: 600px;
   margin-top: -210px;
 }
 .main-detail-section .who-wrap-section h2 {
@@ -299,14 +300,7 @@ h4 {
 }
 /* advisor-section */
 .advisor-section {
-  padding-top: 17px;
-}
-.advisor-section h2 {
-  color: #d9295e;
-  font-size: 109px;
-  line-height: 105px;
-  text-transform: uppercase;
-  margin-bottom: 50px;
+  padding-top: 40px;
 }
 .advisor-section .advisor-wrap-sec {
   margin-top: 100px;
@@ -314,60 +308,67 @@ h4 {
 .team-wrap-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 156px;
+  justify-content: space-between;
 }
 .team-wrap-main .team-content {
-  width: 310px;
+  width: 18%;
 }
 .team-wrap-main .team-content h3 {
-  margin-top: 40px;
   color: #000;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 113.5%;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-top: 29px;
+  margin-bottom: 8px;
+  min-height: 84px;
+  width: 80%;
 }
 .team-wrap-main .team-content p {
   color: #424242;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 140.5%;
   text-transform: capitalize;
   font-family: Barlow-SemiBold;
   margin-bottom: 0px;
+  width: 80%;
 }
-/* leadership-section */
-.leadership-section {
-  padding-top: 60px;
-  padding-bottom: 145px;
+/* Tabs */
+.advisor-section .tabs {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 76px;
 }
-.leadership-section h2 {
-  color: #4a4a4a;
-  font-size: 109px;
-  line-height: 105px;
+
+.advisor-section .tabs .tab {
+  cursor: pointer;
+  color: #b2ab98;
+  font-size: 70px;
+  line-height: 60px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  font-family: Ultra-Regular;
 }
-/* team-section */
-.team-section {
-  background: #d7cfba;
-  padding-top: 66px;
-  padding-bottom: 94px;
+
+.advisor-section .tab.active {
+  color: #d9295e;
 }
-.team-section h2 {
-  color: #4a4a4a;
-  font-size: 109px;
-  line-height: 105px;
-  text-transform: uppercase;
-  margin-bottom: 90px;
+
+.advisor-section .tab:hover {
+  color: #d9295e;
 }
-.team-section .team-wrap-main {
-  justify-content: flex-start;
+[data-tab-content] {
+  display: none;
 }
+
+.active[data-tab-content] {
+  display: block;
+}
+
 /* chart-section */
 .chart-section {
-  padding-top: 70px;
-  padding-bottom: 26%;
+  margin-top: -490px;
+  padding-bottom: 490px;
 }
 .chart-section .chart-inner {
   position: relative;
@@ -436,7 +437,7 @@ h4 {
   padding: 18px 57px;
   position: absolute;
   bottom: -24px;
-  left: 28%;
+  left: 33%;
 }
 .job-section .job-wrap-list .red-bg button {
   color: #d9295e;
@@ -590,10 +591,11 @@ h4 {
 /* footer-section */
 .footer-section {
   background-color: #fccd00;
-  padding-top: 54px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 42px;
   position: relative;
   overflow: hidden;
+  border-top: 8px solid #000;
 }
 .footer-section::before {
   content: "";
@@ -601,9 +603,10 @@ h4 {
   background-image: url(..//img/footer-bg.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
-  left: 210px;
+  left: 160px;
   top: 0;
 }
 .footer-section .footer-inner-section {
@@ -611,13 +614,13 @@ h4 {
   z-index: 9;
 }
 .footer-section .footer-inner-section .footer-logo {
-  margin-bottom: 38px;
+  margin-bottom: 19px;
 }
 .footer-section .footer-inner-section .footer-content h3 {
   color: #000;
   font-size: 28px;
-  line-height: 100%;
   margin-bottom: 30px;
+  width: 80%;
 }
 .footer-section .footer-inner-section .footer-content .form-group {
   position: relative;
@@ -630,15 +633,16 @@ h4 {
   border-radius: 60px;
   border: 1px solid #d9295e;
   color: #000;
-  height: 60px;
-  padding: 8px 16px;
-  font-size: 14px;
+  height: 66px;
+  padding: 14px 33px;
+  font-size: 20px;
   font-family: Ultra-Regular;
+  letter-spacing: 1px;
 }
 .footer-section .footer-inner-section .footer-content .form-group span {
   position: absolute;
-  top: 11px;
-  right: 11px;
+  top: 12px;
+  right: 65px;
 }
 .footer-section .footer-inner-section .footer-content .form-check {
   display: flex;
@@ -653,23 +657,23 @@ h4 {
 }
 .footer-section .footer-inner-section .footer-content .form-check label {
   color: #000;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 150%;
-  font-family: Barlow-Medium;
-}
-.footer-section .footer-inner-section .footer-content {
-  margin-top: 30px;
+  font-family: Barlow-Light;
 }
 .footer-section .footer-inner-section .first-content {
-  width: 45%;
+  width: 75%;
   margin-left: auto;
 }
 .footer-section .footer-inner-section .footer-content h2 {
-  color: #d9295e;
-  font-size: 16px;
-  line-height: 60px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
+  color: #da295f;
+  font-size: 24px;
+  margin-bottom: 33px;
+  letter-spacing: 1.2px;
+  font-family: MontaguSlab-SemiBold;
+}
+.footer-section .footer-inner-section .footer-content {
+  margin-top: 12px;
 }
 .footer-section .footer-inner-section .footer-content ul {
   list-style: none;
@@ -677,13 +681,20 @@ h4 {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 47px;
 }
 .footer-section .footer-inner-section .footer-content ul li a {
-  color: #000;
-  font-size: 14px;
-  line-height: 150%;
   text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  line-height: 168%;
+  letter-spacing: 1.68px;
+}
+.footer-section .footer-inner-section .last-content {
+  position: absolute;
+  text-align: end;
+  right: 0;
+  top: 0;
 }
 .footer-section .footer-inner-section .last-content ul {
   display: flex;
