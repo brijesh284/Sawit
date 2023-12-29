@@ -723,3 +723,56 @@ h4 {
     margin-left: 3%;
   }
 }
+/* membership-PAGE */
+/* membership-banner */
+.membership-banner {
+  padding-top: 76px;
+  position: relative;
+}
+.membership-banner::after {
+  content: "";
+  position: absolute;
+  background-image: url(..//img/membership-banner.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+  width: 1000px;
+  height: 667px;
+}
+.membership-banner .membership-inner {
+  position: relative;
+  z-index: 1;
+}
+.membership-banner .membership-inner h2 {
+  color: #d9295e;
+  font-size: 106px;
+  line-height: 90px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+  width: 75%;
+}
+.membership-banner .membership-inner .become-member-wrap {
+  border-radius: 20px;
+  background: #d9295e;
+  padding: 43px 112px 52px 40px;
+  position: relative;
+}
+.membership-banner .membership-inner .become-member-wrap p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  font-family: Barlow-Medium;
+  margin: 0px;
+}
+.membership-banner .membership-inner .become-member-wrap h3 {
+  position: absolute;
+  background-color: #fd5959;
+  color: #fff;
+  padding: 70px 22px;
+  border-radius: 50%;
+  right: -110px;
+  top: 16px;
+}
