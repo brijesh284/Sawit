@@ -725,11 +725,10 @@ h4 {
 }
 /* membership-PAGE */
 /* membership-banner */
-.membership-banner {
-  padding-top: 76px;
+.membership-banner .membership-banner-inner {
   position: relative;
 }
-.membership-banner::after {
+.membership-banner .membership-banner-inner::after {
   content: "";
   position: absolute;
   background-image: url(..//img/membership-banner.svg);
@@ -750,6 +749,7 @@ h4 {
   font-size: 106px;
   line-height: 90px;
   text-transform: uppercase;
+  margin-top: 76px;
   margin-bottom: 57px;
   width: 75%;
 }
@@ -775,4 +775,132 @@ h4 {
   border-radius: 50%;
   right: -110px;
   top: 16px;
+}
+.membership-wrap-section {
+  background: #fffceb;
+  padding-top: 0px;
+  margin-top: 200px;
+  padding-bottom: 240px;
+}
+.membership-wrap-section .benefit-wrap-content h2 {
+  margin-bottom: 74px;
+  margin-top: -100px;
+}
+/* membership-packages */
+.membership-packages {
+  padding-bottom: 186px;
+  background: #ffa0b8;
+  position: relative;
+}
+.membership-packages .membership-packages-inner {
+  margin-top: -105px;
+}
+.membership-packages .membership-packages-inner h2 {
+  color: #d9295e;
+  font-size: 126px;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+.membership-packages .membership-packages-inner p {
+  color: #424242;
+  font-size: 21px;
+  line-height: 28px;
+  letter-spacing: -0.63px;
+  font-family: Barlow-Medium;
+  width: 65%;
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.membership-packages .membership-packages-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+.membership-packages .membership-packages-image img {
+  width: 100%;
+}
+/* pricing-section */
+.pricing-section {
+  position: relative;
+  margin-top: -50px;
+  padding-bottom: 175px;
+}
+.pricing-section .pricing-inner-section {
+  border-radius: 60px;
+  background: #fff;
+  box-shadow: 0px 0px 156px 30px rgba(0, 0, 0, 0.25);
+  padding: 50px 44px 130px 44px;
+}
+.pricing-section .pricing-inner-section .pricing-wrap-main {
+  border-radius: 50px;
+  padding: 40px 76px 130px 40px;
+  display: flex;
+  position: relative;
+}
+.pricing-section .pricing-inner-section .grey-bg {
+  background: #e3e3e3;
+}
+.pricing-section .pricing-inner-section .sky-bg {
+  background: #e3eeff;
+}
+.pricing-section .pricing-inner-section .pink-bg {
+  background: #f7c4ff;
+}
+.pricing-section .pricing-inner-section .pricing-wrap-main .pricing-left {
+  width: 7%;
+  margin-right: 30px;
+  min-width: 40px;
+}
+.pricing-section .pricing-inner-section .pricing-wrap-main .pricing-left h3 {
+  transform: rotate(90deg);
+  color: #d9295e;
+  font-size: 50px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pricing-section .pricing-inner-section .pricing-wrap-main .pricing-right h2 {
+  color: #000;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.pricing-section .pricing-inner-section .pricing-wrap-main .pricing-right ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.pricing-inner-section .pricing-wrap-main .pricing-right ul li {
+  color: #424242;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-family: Barlow-Bold;
+}
+.pricing-inner-section .pricing-wrap-main .get-start {
+  position: absolute;
+  bottom: -15%;
+  left: 27%;
+}
+.pricing-inner-section .pricing-wrap-main .get-start a {
+  background-color: #fd5959;
+  width: 203px;
+  height: 203px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-family: Ultra-Regular;
+  text-decoration: none;
 }
