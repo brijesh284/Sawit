@@ -108,50 +108,111 @@
                   Ut enim ad minim veniam, quis nostrud
                 </p>
               </div>
+              <!-- member-wrapper-end -->
               <div class="member-wrapper-end">
                 <div class="member-wrapper-btn">
-                  <button class="active">CORPORATE</button>
-                  <button>INDIVIDUAL</button>
+                  <!-- tabs buttons  -->
+                  <button class="tab-btn tab-btn-active" data-for-tab="1">
+                    CORPORATE
+                  </button>
+                  <button class="tab-btn" data-for-tab="2">INDIVIDUAL</button>
                 </div>
-                <p>
-                  Introducing Sawit's exclusive Corporate Membership Program,
-                  tailored to empower companies championing women in tech.
-                </p>
-                <div class="member-wrapper-empower">
-                  <ul>
-                    <li>
-                      <img
-                        src="img/profile-2.png"
-                        alt="profile-2"
-                        class="img-fluid"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="img/profile-3.png"
-                        alt="profile-3"
-                        class="img-fluid"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="img/profile-4.png"
-                        alt="profile-4"
-                        class="img-fluid"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="img/profile-5.png"
-                        alt="profile-5"
-                        class="img-fluid"
-                      />
-                    </li>
-                  </ul>
-                  <span>25+ members joined in last 2 days</span>
-                  <a href="#">
-                    <img src="img/arrow.svg" alt="arrow" class="img-fluid" />
-                  </a>
+                <!-- tabs content  -->
+                <div class="content">
+                  <div class="tab-contentent tab-content-active" data-tab="1">
+                    <p>
+                      Introducing Sawit's exclusive Corporate Membership
+                      Program, tailored to empower companies championing women
+                      in tech.
+                    </p>
+                    <div class="member-wrapper-empower">
+                      <ul>
+                        <li>
+                          <img
+                            src="img/profile-2.png"
+                            alt="profile-2"
+                            class="img-fluid"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="img/profile-3.png"
+                            alt="profile-3"
+                            class="img-fluid"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="img/profile-4.png"
+                            alt="profile-4"
+                            class="img-fluid"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="img/profile-5.png"
+                            alt="profile-5"
+                            class="img-fluid"
+                          />
+                        </li>
+                      </ul>
+                      <span>25+ members joined in last 2 days</span>
+                      <a href="#">
+                        <img
+                          src="img/arrow.svg"
+                          alt="arrow"
+                          class="img-fluid"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="tab-contentent" data-tab="2">
+                    <p>
+                      1. Introducing Sawit's exclusive Corporate Membership
+                      Program, tailored to empower companies championing women
+                      in tech.
+                    </p>
+                    <div class="member-wrapper-empower">
+                      <ul>
+                        <li>
+                          <img
+                            src="img/profile-2.png"
+                            alt="profile-2"
+                            class="img-fluid"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="img/profile-3.png"
+                            alt="profile-3"
+                            class="img-fluid"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="img/profile-4.png"
+                            alt="profile-4"
+                            class="img-fluid"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="img/profile-5.png"
+                            alt="profile-5"
+                            class="img-fluid"
+                          />
+                        </li>
+                      </ul>
+                      <span>25+ members joined in last 2 days</span>
+                      <a href="#">
+                        <img
+                          src="img/arrow.svg"
+                          alt="arrow"
+                          class="img-fluid"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -332,7 +393,6 @@
               lyst
             </li>
           </ul>
-
           <div class="tab-content">
             <div id="home" data-tab-content class="active">
               <div class="team-wrap-main">
@@ -559,9 +619,6 @@
                 CHAT <br />
                 TER
               </h2>
-              <div class="tech-image">
-                <img src="img/tech.svg" alt="tech" class="img-fluid" />
-              </div>
             </div>
             <div class="tech-wrap-body">
               <ul>
@@ -799,6 +856,33 @@
           tab.classList.add("active");
           target.classList.add("active");
         });
+      });
+    </script>
+    <script>
+      function setupTabs() {
+        document.querySelectorAll(".tab-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            const sidebar = button.parentElement;
+            const tabs = sidebar.parentElement;
+            const tabNumber = button.dataset.forTab;
+            const tabActivate = tabs.querySelector(
+              `.tab-contentent[data-tab="${tabNumber}"]`
+            );
+
+            sidebar.querySelectorAll(".tab-btn").forEach((button) => {
+              button.classList.remove("tab-btn-active");
+            });
+            tabs.querySelectorAll(".tab-contentent").forEach((tab) => {
+              tab.classList.remove("tab-content-active");
+            });
+            button.classList.add("tab-btn-active");
+            tabActivate.classList.add("tab-content-active");
+          });
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setupTabs();
       });
     </script>
   </body>

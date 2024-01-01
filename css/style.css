@@ -49,6 +49,7 @@ h4 {
   -webkit-text-stroke-color: #d9295e;
   position: relative;
   z-index: 1;
+  margin-bottom: 0px;
 }
 .member-section .member-content p {
   position: absolute;
@@ -87,6 +88,9 @@ h4 {
 .member-section .member-wrapper .member-wrapper-end .member-wrapper-btn {
   display: flex;
   gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .member-wrapper .member-wrapper-end .member-wrapper-btn button {
   padding: 8px 14px;
@@ -97,8 +101,10 @@ h4 {
   font-family: Barlow-Bold;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  margin: 0px;
 }
-.member-wrapper .member-wrapper-end .member-wrapper-btn .active {
+.member-wrapper .member-wrapper-end .member-wrapper-btn .tab-btn-active {
   color: #d9295e;
   background-color: #fff;
 }
@@ -132,6 +138,39 @@ h4 {
 .member-wrapper-end .member-wrapper-empower a {
   display: inline-block;
   margin-top: 41px;
+}
+/*  */
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.tab-btn {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid gray;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 0;
+  margin: 10px 0;
+  outline: none;
+  /* width: 15%; */
+}
+.tab-btn-active {
+  border-bottom: 2px solid hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+  font-weight: bold;
+}
+/* tabs content */
+.content {
+  width: 100%;
+}
+.tab-contentent {
+  display: none;
+}
+.tab-content-active {
+  display: block;
 }
 /* event-banner */
 .event-banner {
@@ -476,25 +515,13 @@ h4 {
 }
 .tech-section .tech-wrap-head {
   position: relative;
-  padding: 18px 18px 22px 78px;
-  display: flex;
-  justify-content: flex-end;
+  padding: 104px 18px 280px 78px;
 }
 .tech-section .tech-wrap-head h2 {
   color: #393939;
   font-size: 100px;
   text-transform: uppercase;
   line-height: 80px;
-  position: absolute;
-  left: 78px;
-  top: 104px;
-  z-index: 0;
-}
-.tech-section .tech-wrap-head .tech-image {
-  width: 660px;
-}
-.tech-section .tech-wrap-head .tech-image img {
-  width: 100%;
 }
 .tech-section .tech-wrap-body {
   display: flex;
