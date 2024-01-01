@@ -26,3 +26,11 @@
   font-family: MontaguSlab-SemiBold;
   src: url(..//fonts/MontaguSlab-SemiBold.ttf);
 }
+@font-face {
+  font-family: MontaguSlab-Bold;
+  src: url(..//fonts/MontaguSlab-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url(..//fonts/Roboto-Light.ttf);
+}
