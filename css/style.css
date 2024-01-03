@@ -485,7 +485,7 @@ h4 {
   border: none;
   background-color: transparent;
 }
-.benefit-section .benefit-wrap-content .benefit-btn .active {
+.benefit-section .benefit-wrap-content .benefit-btn .tab-btn-active {
   color: #fff;
   background-color: #d9295e;
 }
