@@ -52,6 +52,7 @@ h4 {
     border-radius: 20px;
     width: 90%;
     box-shadow: 0px 0px 84px 20px rgba(0, 0, 0, 0.25);
+    z-index: 9;
   }
   .main-header .nav-menu ul {
     padding: 20px;
@@ -65,11 +66,6 @@ h4 {
 @media only screen and (max-width: 525px) {
   .main-header .nav-menu ul {
     padding: 10px 0px;
-  }
-  .profile-header {
-    position: absolute;
-    right: 90px;
-    top: 20px;
   }
   .registration-wrap-inner .registration-form-main .submit-btn button {
     padding: 20px;
@@ -1220,6 +1216,12 @@ h4 {
 .registration-main-wrap .registration-wrap-inner .registration-image {
   margin-top: -120px;
 }
+.registration-wrap-inner .registration-form-main {
+  position: relative;
+}
+.registration-wrap-inner .registration-form-main .membership-image {
+  display: none;
+}
 .registration-wrap-inner .registration-form-main h2 {
   color: #000;
   font-size: 28px;
@@ -1409,16 +1411,92 @@ h4 {
   .registration-main-wrap .registration-wrap-inner .registration-image {
     margin-top: -90px;
   }
+  /* Login form */
+  .login-form-main .modal-dialog .modal-content .close-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .login-form-main .modal-dialog .modal-content::after {
+    content: "";
+    width: 440px;
+    height: 100%;
+    top: auto;
+    right: 20px;
+    bottom: -40px;
+    z-index: 0;
+  }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991.5px) {
+  .login-form-main {
+    width: 90%;
+    left: 5%;
+  }
+  .main-header .navbar-brand {
+    width: 83px;
+  }
+  .login-form-main .modal-dialog .modal-content::after {
+    content: "";
+    display: none;
+  }
+  .login-form-main .modal-dialog .modal-body .modal-body-head {
+    transform: none;
+    position: unset;
+    margin-top: -70px;
+  }
+  .login-form-main .modal-dialog .modal-body .modal-body-head h2 {
+    font-size: 34px;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .login-form-main .modal-dialog .modal-body .modal-body-form {
+    margin: auto;
+    width: 80%;
+  }
+  .main-header .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-header .navbar-logo button {
+    border: none;
+  }
+  .main-header .profile-header a img {
+    width: 40px;
+  }
+  .main-header .profile-header .dropdown-toggle::after {
+    display: none;
+  }
   .registration-main-wrap .registration-wrap-inner .registration-image {
-    margin-top: -90px;
-    width: 30%;
+    display: none;
+  }
+  .registration-main-wrap .registration-wrap-inner {
+    box-shadow: none;
+    padding-top: 0;
+
+    border-radius: 0px;
+  }
+  .registration-wrap-inner .registration-form-main .membership-image {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 166px;
+  }
+  .registration-wrap-inner .picture-add .picture-inner {
+    align-items: flex-start;
+    margin-bottom: 30px;
+    display: table-caption;
   }
   .registration-wrap-inner .registration-form-main {
     width: 90%;
     margin: auto;
     padding: 40px 0px;
+  }
+  .registration-wrap-inner .registration-form-main .form-group {
+    margin-bottom: 16px;
   }
   .registration-wrap-inner .registration-form-main .registration-form-inner {
     display: flex;
@@ -1427,37 +1505,106 @@ h4 {
   .registration-wrap-inner .registration-form-main form {
     width: 100%;
   }
-}
-@media only screen and (max-width: 767px) {
   .registration-form-main .registration-form-inner .mobile-view {
     display: block;
   }
   .registration-form-main .registration-form-inner .web-view {
     display: none;
   }
-  .registration-main-wrap .registration-wrap-inner .registration-image {
-    margin-top: -60px;
-    width: 30%;
-  }
+}
+@media only screen and (max-width: 767px) {
   .registration-main-wrap {
     margin-top: 40px;
   }
 }
 @media only screen and (max-width: 525px) {
   .registration-wrap-inner .registration-form-main {
-    width: 95%;
+    width: 100%;
+    padding: 0;
   }
   .registration-wrap-inner .registration-form-main .form-group input {
-    padding: 14px 24px;
+    padding: 10px 24px;
+    font-size: 12px;
+  }
+  .login-form-main .modal-dialog .modal-body .modal-body-form {
+    margin: auto;
+    width: 100%;
+  }
+  .login-form-main .modal-dialog .modal-body {
+    position: relative;
+    padding: 30px 15px 40px 15px;
+  }
+  .login-form-main
+    .modal-dialog
+    .modal-body
+    .modal-body-form
+    .form-group
+    input {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.48px;
+    padding: 14px 29px;
+  }
+  .modal-body .modal-body-form .modal-body-end .login-btn {
+    font-size: 20px;
+    padding: 14px;
+    width: 90%;
+  }
+  .modal-body .modal-body-form .modal-body-end .google-btn button {
+    font-size: 14px;
+    width: 70%;
+    gap: 8px;
+  }
+  .modal-body .modal-body-form .modal-body-end .google-btn button img {
+    width: 20px;
+  }
+  .drag-area {
+    font-size: 21px;
+  }
+  .registration-wrap-inner .registration-form-main .registration-form-inner {
+    margin-top: 20px;
+  }
+  .main-header .profile-header .dropdown-menu {
+    left: -120px;
+  }
+  .registration-wrap-inner .registration-form-main .submit-btn button {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    width: auto;
+    padding: 7px 55px;
+  }
+  .drag-area button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 5px 40px;
+  }
+  .drag-area {
+    padding: 23px 0px 32px 0px;
+  }
+  .registration-wrap-inner .picture-add .picture-inner span {
+    font-size: 12px;
+  }
+  .registration-wrap-inner .registration-form-main .membership-image {
+    width: 106px;
   }
   .registration-wrap-inner .picture-add .picture-inner {
     flex-direction: row;
     justify-content: center;
   }
   .registration-wrap-inner .picture-add .picture-inner .input-file-trigger {
-    width: 52px;
-    height: 52px;
+    width: 78px;
+    height: 78px;
     padding: 14px;
+  }
+  .registration-wrap-inner .picture-add .picture-inner .input-file-trigger svg {
+    width: 21px;
   }
   .registration-wrap-inner .picture-add {
     width: 100%;
