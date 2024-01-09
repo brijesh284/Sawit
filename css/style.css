@@ -227,6 +227,7 @@ h4 {
   font-size: 86px;
   line-height: 70px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 /* member-section */
 .member-section {
@@ -258,9 +259,10 @@ h4 {
   font-size: 21px;
   line-height: 28px;
   letter-spacing: -0.63px;
-  width: 54%;
+  width: 53%;
   margin-bottom: 0px;
   right: 0;
+  z-index: 9;
 }
 .member-section .member-image {
   text-align: center;
@@ -270,7 +272,7 @@ h4 {
   border-radius: 20px;
   background: #d9295e;
   padding: 40px;
-  margin-left: 7%;
+  margin-left: 5%;
   position: absolute;
   top: -290px;
 }
@@ -278,6 +280,22 @@ h4 {
   margin-bottom: 480px;
 }
 .member-section .member-wrapper .member-wrapper-top p {
+  color: #fff;
+  font-size: 21px;
+  line-height: 28px;
+  letter-spacing: -0.63px;
+  font-family: Barlow-Medium;
+}
+.member-section .member-wrapper .member-wrapper-mobile {
+  display: none;
+}
+.member-section .member-wrapper .member-wrapper-mobile h2 {
+  color: #fff;
+  font-size: 46px;
+  line-height: 49.017px;
+  text-transform: uppercase;
+}
+.member-section .member-wrapper .member-wrapper-mobile p {
   color: #fff;
   font-size: 21px;
   line-height: 28px;
@@ -814,6 +832,7 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+
 /* footer-section */
 .footer-section {
   background-color: #fccd00;
@@ -992,10 +1011,73 @@ h4 {
     width: 90%;
   }
 }
+@media only screen and (max-width: 1480px) {
+  .member-section .member-content p {
+    width: 51%;
+  }
+}
+@media only screen and (max-width: 1399.5px) {
+  .banner-section .banner-content h2 {
+    font-size: 70px;
+    line-height: 64px;
+  }
+  .member-section .member-wrapper {
+    width: 310px;
+    padding: 30px;
+    margin-left: 5%;
+    top: -250px;
+  }
+  .member-section .member-content p {
+    width: 350px;
+    font-size: 18px;
+    right: -30px;
+  }
+}
 @media only screen and (max-width: 1199.5px) {
   .banner-section .banner-content h2 {
-    font-size: 64px;
-    line-height: 60px;
+    font-size: 56px;
+    line-height: 50px;
+  }
+  .member-section .member-content h2 {
+    font-size: 102px;
+  }
+  .member-section .member-content p {
+    right: 0;
+  }
+  .benefit-section .benefit-wrap-content .benefit-btn {
+    margin-bottom: 30px;
+  }
+  .benefit-section .benefit-wrap-content .benefit-inner-wrap {
+    padding: 15px 15px 20px 15px;
+    margin-bottom: 30px;
+  }
+  .benefit-section .benefit-wrap-content .benefit-inner-wrap h3 {
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 4px;
+  }
+  .main-detail-section .who-wrap-section h2 {
+    font-size: 126px;
+    line-height: 110px;
+  }
+  .advisor-section .tabs .tab {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .team-wrap-main .team-content h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 29px;
+    margin-bottom: 8px;
+    min-height: 70px;
+    width: 100%;
+  }
+  .benefit-section .benefit-wrap-content .benefit-inner-wrap p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .member-section .member-wrapper .member-wrapper-top {
+    margin-bottom: 410px;
   }
   .member-section .member-wrapper {
     width: 300px;
@@ -1007,6 +1089,13 @@ h4 {
     position: relative;
     width: 90%;
     margin-left: 3%;
+  }
+  .job-section .job-wrap-list .job-wrap-box h3,
+  .job-section .job-wrap-list .job-wrap-box h4 {
+    font-size: 28px;
+  }
+  .job-section .job-wrap-list .job-wrap-box button {
+    left: 25%;
   }
   .footer-section .footer-inner-section .footer-logo {
     width: 150px;
@@ -1038,7 +1127,174 @@ h4 {
     margin-bottom: 24px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .member-section .member-content p {
+    width: 250px;
+    bottom: -20px;
+  }
+  .upcoming-section .upcoming-title h2 {
+    font-size: 94px;
+    line-height: 80px;
+  }
+  .upcoming-section .upcoming-title {
+    margin-top: -74px;
+  }
+  .tech-section .tech-wrap-body ul li {
+    gap: 18px;
+  }
+  .tech-section .tech-wrap-body ul li p {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 991.5px) {
+  .banner-section .banner-content h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .member-section .member-wrapper {
+    position: unset;
+    width: 100%;
+    margin-left: 0px;
+    padding: 40px;
+  }
+  .member-section .member-wrapper .member-wrapper-end {
+    margin-top: 50px;
+  }
+  .member-section .member-wrapper .member-wrapper-mobile {
+    display: block;
+  }
+  .member-section .member-image {
+    display: none;
+  }
+  .member-section .member-content {
+    display: none;
+  }
+  .member-section .member-wrapper .member-wrapper-top {
+    margin-bottom: 40px;
+  }
+  .member-wrapper .member-wrapper-end p {
+    font-size: 16px;
+  }
+  .member-wrapper-end .member-wrapper-empower a {
+    display: block;
+    margin-top: 31px;
+  }
+  .member-wrapper-end .member-wrapper-empower {
+    margin-top: 40px;
+  }
+  .event-banner .event-banner-inner img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .upcoming-section .upcoming-title h2 {
+    font-size: 70px;
+    line-height: 60px;
+  }
+  .upcoming-section .upcoming-title p {
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+  }
+  .upcoming-section .upcoming-title {
+    margin-top: -54px;
+  }
+  .upcoming-section-body {
+    gap: 15px;
+  }
+  .upcoming-section-body .upcoming-wrap-list .upcoming-top h2 {
+    font-size: 18px;
+  }
+  .upcoming-section-body .upcoming-wrap-list .upcoming-top h3 {
+    font-size: 14px;
+  }
+  .upcoming-section-body .upcoming-wrap-list .upcoming-end h3 {
+    font-size: 14px;
+  }
+  .upcoming-section-body .upcoming-wrap-list .upcoming-end p {
+    font-size: 10px;
+  }
+  .upcoming-section-body .upcoming-wrap-list .upcoming-top {
+    padding-top: 32px;
+    padding-left: 54px;
+  }
+  .upcoming-section-body .upcoming-wrap-list {
+    border-radius: 280px;
+    width: 230px;
+    height: 230px;
+  }
+  .upcoming-section-body .upcoming-wrap-list .upcoming-end {
+    padding-top: 12px;
+    padding-left: 34px;
+    padding-bottom: 0px;
+  }
+  .benefit-section {
+    padding-top: 113px;
+  }
+  .benefit-section .benefit-wrap-content .benefit-inner-wrap {
+    padding: 22px 20px;
+    margin-bottom: 30px;
+  }
+  .benefit-section {
+    position: relative;
+  }
+  .benefit-section .benefit-wrap-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+  }
+  .team-wrap-main {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team-wrap-main .team-content {
+    width: 30%;
+  }
+  .chart-section .chart-inner {
+    display: block;
+  }
+  .job-section {
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding: 50px 50px 160px 50px;
+  }
+  .main-detail-section {
+    padding-bottom: 140px;
+  }
+  .job-section .job-wrap-list .job-wrap-box button {
+    left: 35%;
+  }
+  .main-detail-section .who-wrap-section h2 {
+    margin-top: 140px;
+  }
+  .chart-section {
+    margin-top: -60px;
+    padding-bottom: 180px;
+  }
+  .tech-section {
+    width: 100%;
+    margin-top: 140px;
+    padding-bottom: 100px;
+  }
+  .job-section .view-all,
+  .tech-section .tech-wrap-end {
+    left: 38%;
+  }
+  .tech-section .tech-wrap-body {
+    margin: 0;
+    padding: 50px;
+  }
+  .tech-section .tech-wrap-body ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .tech-section .tech-wrap-head {
+    position: relative;
+    padding: 50px 18px 50px 50px;
+  }
   .footer-section::before {
     content: "";
     background-image: url(..//img/mobile-footer.svg);
@@ -1071,7 +1327,204 @@ h4 {
     text-align: start;
   }
 }
+@media only screen and (max-width: 767.5px) {
+  .banner-section .banner-content h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .member-section {
+    padding: 50px 0px 0px;
+  }
+  .event-banner {
+    background-color: #f7eedf;
+    padding-top: 118px;
+    margin-top: -60px;
+  }
+  .upcoming-section .upcoming-title {
+    margin-top: -62px;
+    position: relative;
+    display: block;
+  }
+  .upcoming-section-body {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .advisor-section .tabs .tab {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .advisor-section .tabs {
+    margin-bottom: 20px;
+  }
+  .team-wrap-main .team-content {
+    width: 100%;
+    text-align: center;
+  }
+  .team-wrap-main .team-content h3 {
+    min-height: auto;
+  }
+  .team-wrap-main .team-content p {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 525px) {
+  .banner-section .banner-content h2 {
+    line-height: 21px;
+    margin-bottom: -10px;
+  }
+  .member-section {
+    padding: 20px 0px 0px;
+  }
+  .member-section .member-wrapper {
+    padding: 40px 20px;
+  }
+  .member-section .member-wrapper .member-wrapper-top p,
+  .member-section .member-wrapper .member-wrapper-mobile p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .member-section .member-wrapper .member-wrapper-end {
+    margin-top: 30px;
+  }
+  .member-wrapper-end .member-wrapper-empower a {
+    margin-top: 24px;
+    width: 30px;
+  }
+  .event-banner .event-banner-inner img {
+    width: 60%;
+  }
+  .upcoming-section .upcoming-title h2 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+  .upcoming-section .upcoming-title {
+    margin-top: -30px;
+  }
+  .upcoming-section-body {
+    justify-content: center;
+    gap: 35px;
+  }
+  .benefit-section {
+    padding-top: 0px;
+    margin-top: 112px;
+  }
+  .benefit-section .benefit-wrap-image {
+    top: -80px;
+    right: 10px;
+    width: 50%;
+  }
+  .benefit-section .benefit-wrap-content .benefit-inner-wrap h3 {
+    font-size: 17px;
+  }
+  .benefit-section .benefit-wrap-content h2 {
+    font-size: 42px;
+    line-height: 40px;
+  }
+  .main-detail-section {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    margin-top: -100px;
+  }
+  .main-detail-section .who-wrap-section {
+    position: relative;
+  }
+  .main-detail-section .who-wrap-section h2 {
+    position: absolute;
+    margin: 0px;
+    font-size: 40px;
+    width: 30%;
+    line-height: 40px;
+    top: 30px;
+  }
+  .main-detail-section .who-wrap-section .who-wrap-image {
+    text-align: end;
+  }
+  .main-detail-section .who-wrap-section .who-wrap-image img {
+    width: 70%;
+  }
+  .advisor-section .tabs .tab {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .team-wrap-main {
+    gap: 50px;
+    margin-top: 40px;
+  }
+  .team-wrap-main .team-content {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-top: 0px;
+  }
+  .team-wrap-main .team-content img {
+    width: 140px;
+  }
+  .team-wrap-main .team-content .team-inner-conent {
+    text-align: start;
+  }
+  .team-wrap-main .team-content h3 {
+    margin-top: 0px;
+    font-size: 16px;
+  }
+  .chart-section {
+    margin-top: -100px;
+    padding-bottom: 100px;
+  }
+  .job-section {
+    padding: 35px 20px 100px;
+  }
+  .job-section h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .job-section .job-wrap-list .job-wrap-box {
+    padding: 25px 24px 47px;
+    margin-top: 50px;
+    height: auto;
+  }
+  .job-section .job-wrap-list .job-wrap-box h3,
+  .job-section .job-wrap-list .job-wrap-box h4 {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .job-section .job-wrap-list .job-wrap-box button {
+    left: 28%;
+    font-size: 18px;
+    padding: 10px 40px;
+    bottom: -18px;
+  }
+  .job-section .view-all a,
+  .tech-section .tech-wrap-end a {
+    width: 140px;
+    height: 140px;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .job-section .view-all,
+  .tech-section .tech-wrap-end {
+    left: 32%;
+  }
+  .tech-section .tech-wrap-head h2 {
+    font-size: 40px;
+    line-height: 36px;
+    margin-bottom: 0px;
+  }
+  .tech-section .tech-wrap-head {
+    padding: 35px 20px;
+  }
+  .tech-section .tech-wrap-body {
+    padding: 20px;
+  }
+  .tech-section .tech-wrap-body ul li {
+    margin-bottom: 40px;
+  }
+  .tech-section {
+    padding-bottom: 40px;
+  }
+  .tech-section .tech-wrap-end {
+    bottom: -70px;
+  }
   .footer-section .footer-inner-section .footer-logo {
     width: 94px;
   }
@@ -1111,6 +1564,27 @@ h4 {
   }
   .footer-section .footer-inner-section .footer-content {
     margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .banner-section .banner-content h2 {
+    line-height: 18px;
+    font-size: 20px;
+  }
+  .benefit-section .benefit-wrap-content .benefit-inner-wrap {
+    padding: 22px 15px;
+  }
+  .benefit-section .benefit-wrap-content .benefit-inner-wrap h3 {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .job-section .job-wrap-list .job-wrap-box h3,
+  .job-section .job-wrap-list .job-wrap-box h4 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .job-section .job-wrap-list .job-wrap-box button {
+    left: 20%;
   }
 }
 /* membership-PAGE */
@@ -1300,13 +1774,226 @@ h4 {
     height: 100%;
   }
   .membership-banner .membership-inner h2 {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 60px;
     margin-top: 26px;
     margin-bottom: 26px;
   }
   .membership-banner .membership-inner .become-member-wrap {
     padding: 20px 70px 30px 20px;
+  }
+  .membership-banner .membership-inner .become-member-wrap h3 {
+    padding: 60px 16px;
+    right: -130px;
+    top: 16px;
+    font-size: 24px;
+  }
+  .benefit-section .benefit-wrap-content h2 {
+    font-size: 96px;
+    line-height: 80px;
+    margin-top: -80px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main .pricing-left {
+    margin-right: 0px;
+    min-width: 40px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main .pricing-left h3 {
+    font-size: 30px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main {
+    padding: 30px 34px 130px 30px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main .pricing-right h2 {
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .pricing-inner-section .pricing-wrap-main .pricing-right ul li {
+    font-size: 14px;
+  }
+  .pricing-inner-section .pricing-wrap-main .get-start a {
+    width: 163px;
+    height: 163px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 991.5px) {
+  .membership-banner .membership-inner h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    width: 40%;
+  }
+  .membership-banner .membership-inner .become-member-wrap {
+    margin-top: 70px;
+    padding: 20px 140px 30px 20px;
+  }
+  .membership-banner .membership-banner-inner::after {
+    top: -40px;
+  }
+  .membership-banner .membership-inner .become-member-wrap h3 {
+    padding: 50px 18px;
+    right: 0px;
+    top: 20px;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .membership-wrap-section .benefit-wrap-content {
+    position: relative;
+    z-index: 9;
+  }
+  .membership-packages .membership-packages-inner h2 {
+    font-size: 66px;
+    line-height: 60px;
+  }
+  .membership-packages .membership-packages-inner p {
+    font-size: 18px;
+    line-height: 28px;
+    width: 45%;
+    margin-left: 0%;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main {
+    padding: 30px 34px 100px 30px;
+    margin-bottom: 100px;
+  }
+  .pricing-inner-section .pricing-wrap-main .get-start a {
+    width: 143px;
+    height: 143px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .pricing-inner-section .pricing-wrap-main .get-start {
+    bottom: -15%;
+    left: 40%;
+  }
+  .pricing-section .pricing-inner-section {
+    padding: 50px 44px 50px 44px;
+  }
+  .membership-wrap-section {
+    margin-top: 160px;
+    padding-bottom: 170px;
+  }
+}
+@media only screen and (max-width: 767.5px) {
+  .membership-banner .membership-banner-inner::after {
+    width: 80%;
+    top: -76px;
+  }
+  .membership-banner .membership-inner h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 0px;
+  }
+  .membership-banner .membership-inner .become-member-wrap p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px;
+  }
+  .benefit-section .benefit-wrap-content h2 {
+    font-size: 76px;
+    line-height: 60px;
+    margin-top: -60px;
+  }
+  .membership-wrap-section {
+    margin-top: 120px;
+    padding-bottom: 100px;
+  }
+  .membership-packages {
+    padding-bottom: 66px;
+  }
+  .membership-packages .membership-packages-inner p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 45%;
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .membership-banner .membership-banner-inner::after {
+    top: 0px;
+    background-position: top;
+  }
+  .membership-banner .membership-inner h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 0px;
+  }
+  .membership-banner .membership-inner .become-member-wrap {
+    padding: 20px 20px 100px 20px;
+  }
+  .membership-banner .membership-inner .become-member-wrap h3 {
+    right: 30%;
+    top: auto;
+    bottom: -60px;
+  }
+  .benefit-section .benefit-wrap-content h2 {
+    font-size: 56px;
+    line-height: 50px;
+    margin-top: -50px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main .pricing-right ul {
+    gap: 20px;
+  }
+  .membership-wrap-section .benefit-wrap-image {
+    top: 0px;
+    width: 60%;
+  }
+  .membership-packages .membership-packages-image {
+    display: none;
+  }
+  .membership-packages .membership-packages-inner h2 {
+    font-size: 46px;
+    line-height: 44px;
+  }
+  .membership-packages .membership-packages-inner {
+    margin-top: -40px;
+  }
+  .membership-packages {
+    padding-bottom: 100px;
+  }
+  .membership-packages .membership-packages-inner p {
+    width: 85%;
+  }
+  .pricing-section .pricing-inner-section {
+    padding: 20px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main {
+    display: block;
+    padding: 20px 20px 70px 20px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main .pricing-left h3 {
+    transform: none;
+    font-size: 16px;
+  }
+  .pricing-section .pricing-inner-section .pricing-wrap-main .pricing-left {
+    margin-right: 0px;
+    min-width: auto;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .pricing-inner-section .pricing-wrap-main .get-start {
+    left: 30%;
+  }
+  .pricing-section {
+    padding-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .membership-banner .membership-inner h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .membership-banner .membership-inner .become-member-wrap {
+    margin-top: 50px;
+  }
+  .pricing-inner-section .pricing-wrap-main .get-start {
+    left: 20%;
+    bottom: -18%;
+  }
+  .pricing-section .pricing-inner-section {
+    padding: 10px;
   }
 }
 /* registration-PAGE */
