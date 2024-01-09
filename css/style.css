@@ -71,6 +71,9 @@ h4 {
     padding: 20px;
     width: 100%;
   }
+  .main-header .nav-menu {
+    top: 60px;
+  }
 }
 /* Modal-login-form-main */
 .login-form-main .modal-dialog {
@@ -1005,6 +1008,110 @@ h4 {
     width: 90%;
     margin-left: 3%;
   }
+  .footer-section .footer-inner-section .footer-logo {
+    width: 150px;
+  }
+  .footer-section .footer-inner-section .footer-content h3 {
+    font-size: 22px;
+  }
+  .footer-section::before {
+    left: 120px;
+  }
+  .footer-section .footer-inner-section .footer-content .form-group {
+    width: 90%;
+  }
+  .footer-section .footer-inner-section .footer-content .form-group span {
+    right: 20px;
+    top: 10px;
+  }
+  .footer-section .footer-inner-section .footer-content .form-group input {
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .footer-section .footer-inner-section .footer-content ul li a {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .footer-section .footer-inner-section .footer-content h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 991.5px) {
+  .footer-section::before {
+    content: "";
+    background-image: url(..//img/mobile-footer.svg);
+    background-position: right;
+    background-size: contain;
+    left: unset;
+    right: -100px;
+  }
+  .footer-section .footer-inner-section .footer-content h3 {
+    width: 70%;
+  }
+  .footer-section .footer-inner-section .footer-content form {
+    width: 70%;
+  }
+  .footer-section .footer-inner-section .footer-content .form-group {
+    width: 100%;
+  }
+  .footer-section .footer-inner-section .first-content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer-section .footer-inner-section .footer-content {
+    margin-top: 30px;
+  }
+  .footer-section .footer-inner-section .footer-content ul {
+    gap: 18px;
+  }
+  .footer-section .footer-inner-section .last-content {
+    position: unset;
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .footer-section .footer-inner-section .footer-logo {
+    width: 94px;
+  }
+  .footer-section .footer-inner-section .footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .footer-section::before {
+    right: -140px;
+  }
+  .footer-section .footer-inner-section .footer-content .form-check p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    line-height: normal;
+  }
+  .footer-section .footer-inner-section .footer-content .form-group input {
+    height: auto;
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+  .footer-section .footer-inner-section .footer-content .form-group span {
+    right: 20px;
+    top: 5px;
+  }
+  .footer-section .footer-inner-section .footer-content .form-group span svg {
+    width: 20px;
+  }
+  .footer-section .footer-inner-section .footer-content h2 {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .footer-section .footer-inner-section .footer-content ul li a {
+    font-size: 14px;
+  }
+  .footer-section .footer-inner-section .footer-content ul {
+    gap: 14px;
+  }
+  .footer-section .footer-inner-section .footer-content {
+    margin-top: 20px;
+  }
 }
 /* membership-PAGE */
 /* membership-banner */
@@ -1462,6 +1569,9 @@ h4 {
   }
   .main-header .navbar-logo button {
     border: none;
+  }
+  .main-header .navbar-logo button:focus {
+    box-shadow: none;
   }
   .main-header .profile-header a img {
     width: 40px;
