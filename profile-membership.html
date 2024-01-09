@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sawit - profile-membership</title>
+    <title>Sawit - Profile-Membership</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -14,20 +14,36 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light main-header">
       <div class="container">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="Logo" class="navbar-brand" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="navbar-logo">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 1C0 0.45 0.4275 0 0.95 0H18.05C18.5725 0 19 0.45 19 1C19 1.55 18.5725 2 18.05 2H0.95C0.4275 2 0 1.55 0 1ZM0 9C0 8.45 0.4275 8 0.95 8H18.05C18.5725 8 19 8.45 19 9C19 9.55 18.5725 10 18.05 10H0.95C0.4275 10 0 9.55 0 9ZM0 17C0 16.45 0.4275 16 0.95 16H12.35C12.8725 16 13.3 16.45 13.3 17C13.3 17.55 12.8725 18 12.35 18H0.95C0.4275 18 0 17.55 0 17Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Logo" class="navbar-brand" />
+          </a>
+        </div>
+
         <div
           class="collapse navbar-collapse nav-menu"
           id="navbarSupportedContent"
@@ -139,31 +155,28 @@
         </div>
       </div>
     </div>
-        <!-- payment-body -->
-    <section class="payment-body-main">
+    <!-- Profile-Membership-web-view -->
+    <section class="membership-body-main membership-web-view">
       <div class="container-fluid">
-        <div class="payment-body-inner">
+        <div class="membership-body-inner">
           <div class="features">
-            <div class="payment-wrap-main">
+            <div class="membership-wrap-main">
               <div class="selector" id="features">
-                <div class="payment-wrap-left">
-                  <div class="payment-wrap-left-top">
-                    <h2>Select Payment Method</h2>
-                    <div class="payment-list">
-                      <div class="payment-list-img">
+                <div class="membership-wrap-left">
+                  <div class="membership-wrap-left-top">
+                    <div class="membership-profile">
+                      <img
+                        src="img/membership-profile.png"
+                        alt="membership-profile"
+                        class="img-fluid"
+                      />
+                      <a href="#">
                         <img
-                          src="img/razorpay-icon.svg"
-                          alt="razorpay-icon"
+                          src="img/membership-edit.svg"
+                          alt="membership-edit"
                           class="img-fluid"
                         />
-                      </div>
-                      <div class="payment-list-img">
-                        <img
-                          src="img/paypal-icon.svg"
-                          alt="paypal-icon"
-                          class="img-fluid"
-                        />
-                      </div>
+                      </a>
                     </div>
                   </div>
                   <div class="tab-cont">
@@ -171,369 +184,85 @@
                       class="but active feature-1 tab-item"
                       onclick="feature(event, 'feature-1')"
                     >
-                      Credit Card
+                      Membership
                     </button>
                     <button
                       class="but feature-2 tab-item"
                       onclick="feature(event, 'feature-2')"
                     >
-                      Apple Pay
+                      LEARNING
                     </button>
                     <button
                       class="but feature-3 tab-item"
                       onclick="feature(event, 'feature-3')"
                     >
-                      Card
+                      EVENT
                     </button>
                     <button
                       class="but feature-4 tab-item"
                       onclick="feature(event, 'feature-4')"
                     >
-                      Paypal
+                      JOB
+                    </button>
+                    <button
+                      class="but feature-4 tab-item"
+                      onclick="feature(event, 'feature-5')"
+                    >
+                      ACCOUNT SETTING
                     </button>
                   </div>
                 </div>
-                <div class="payment-wrap-right">
-                  <div
-                    class="tab-content feature-1 active tab-item"
-                    id="feature-1"
-                  >
-                    <div class="payment-right-content">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="card-information">
-                            <h3>Card</h3>
-                          </div>
-                          <div class="form-group mt-0">
-                            <label for="">Contact Information</label>
-                            <input
-                              type="email"
-                              placeholder="Ak9075647599@gmail.com"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Card Information</label>
-                            <div class="information-input">
-                              <input
-                                type="number"
-                                placeholder="9-090 9075647 599 0000000"
-                              />
-                              <img
-                                src="img/visa-icon.svg"
-                                alt="visa-icon "
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="information-card-inner">
-                              <div class="row">
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="MM/YY" />
-                                </div>
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="CVC" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="">Cardholder Name</label>
-                            <input
-                              type="text"
-                              placeholder="Full name on card"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Country or Region</label>
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Open this select menu</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <div class="form-check">
-                              <div class="sb-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="sb-checkbox__input"
-                                  id="check2"
-                                  name="check2"
-                                />
-                                <label
-                                  class="sb-checkbox__label sb-checkbox__label--red"
-                                  for="check2"
-                                ></label>
-                              </div>
-                              <p>
-                                Securely save my information for 1 - click
-                                checkout
-                              </p>
-                            </div>
-                          </div>
-                          <div class="submit-btn">
-                            <button>Subscribe</button>
-                          </div>
+                <div class="membership-wrap-right">
+                  <div class="wrap-top-head">
+                    <h3>
+                      Roshni Nadar <br />
+                      Malhotra
+                    </h3>
+                    <p>Chairperson</p>
+                    <a href="#">roshni@sawit.com</a>
+                  </div>
+                  <div>
+                    <div
+                      class="tab-content feature-1 active tab-item"
+                      id="feature-1"
+                    >
+                      <div class="membership-content-one">
+                        <ul>
+                          <li>
+                            <h3>Member ID</h3>
+                            <p>1234567890</p>
+                          </li>
+                          <li>
+                            <h3>Joined ON</h3>
+                            <p>22 Dec 2023</p>
+                          </li>
+                        </ul>
+                        <div class="upgrade-wrap">
+                          <h2>UP GRADE</h2>
+                        </div>
+                        <div class="membership-bg-image">
+                          <img
+                            src="img/membership-bg.svg"
+                            alt="membership-bg"
+                            class="img-fluid"
+                          />
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="tab-content feature-2 tab-item" id="feature-2">
-                    <div class="payment-right-content">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="card-information">
-                            <h3>apple pay</h3>
-                          </div>
-                          <div class="form-group mt-0">
-                            <label for="">Contact Information</label>
-                            <input
-                              type="email"
-                              placeholder="Ak9075647599@gmail.com"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Card Information</label>
-                            <div class="information-input">
-                              <input
-                                type="number"
-                                placeholder="9-090 9075647 599 0000000"
-                              />
-                              <img
-                                src="img/visa-icon.svg"
-                                alt="visa-icon "
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="information-card-inner">
-                              <div class="row">
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="MM/YY" />
-                                </div>
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="CVC" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="">Cardholder Name</label>
-                            <input
-                              type="text"
-                              placeholder="Full name on card"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Country or Region</label>
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Open this select menu</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <div class="form-check">
-                              <div class="sb-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="sb-checkbox__input"
-                                  id="check2"
-                                  name="check2"
-                                />
-                                <label
-                                  class="sb-checkbox__label sb-checkbox__label--red"
-                                  for="check2"
-                                ></label>
-                              </div>
-                              <p>
-                                Securely save my information for 1 - click
-                                checkout
-                              </p>
-                            </div>
-                          </div>
-                          <div class="submit-btn">
-                            <button>Subscribe</button>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="tab-content feature-2 tab-item" id="feature-2">
+                      <div class="membership-right-content"></div>
                     </div>
-                  </div>
 
-                  <div class="tab-content feature-3 tab-item" id="feature-3">
-                    <div class="payment-right-content">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="card-information">
-                            <h3>Card</h3>
-                          </div>
-                          <div class="form-group mt-0">
-                            <label for="">Contact Information</label>
-                            <input
-                              type="email"
-                              placeholder="Ak9075647599@gmail.com"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Card Information</label>
-                            <div class="information-input">
-                              <input
-                                type="number"
-                                placeholder="9-090 9075647 599 0000000"
-                              />
-                              <img
-                                src="img/visa-icon.svg"
-                                alt="visa-icon "
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="information-card-inner">
-                              <div class="row">
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="MM/YY" />
-                                </div>
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="CVC" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="">Cardholder Name</label>
-                            <input
-                              type="text"
-                              placeholder="Full name on card"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Country or Region</label>
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Open this select menu</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <div class="form-check">
-                              <div class="sb-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="sb-checkbox__input"
-                                  id="check2"
-                                  name="check2"
-                                />
-                                <label
-                                  class="sb-checkbox__label sb-checkbox__label--red"
-                                  for="check2"
-                                ></label>
-                              </div>
-                              <p>
-                                Securely save my information for 1 - click
-                                checkout
-                              </p>
-                            </div>
-                          </div>
-                          <div class="submit-btn">
-                            <button>Subscribe</button>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="tab-content feature-3 tab-item" id="feature-3">
+                      <div class="membership-right-content"></div>
                     </div>
-                  </div>
 
-                  <div class="tab-content feature-4 tab-item" id="feature-4">
-                    <div class="payment-right-content">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="card-information">
-                            <h3>paypal</h3>
-                          </div>
-                          <div class="form-group mt-0">
-                            <label for="">Contact Information</label>
-                            <input
-                              type="email"
-                              placeholder="Ak9075647599@gmail.com"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Card Information</label>
-                            <div class="information-input">
-                              <input
-                                type="number"
-                                placeholder="9-090 9075647 599 0000000"
-                              />
-                              <img
-                                src="img/visa-icon.svg"
-                                alt="visa-icon "
-                                class="img-fluid"
-                              />
-                            </div>
-                            <div class="information-card-inner">
-                              <div class="row">
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="MM/YY" />
-                                </div>
-                                <div class="col-lg-6">
-                                  <input type="number" placeholder="CVC" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="">Cardholder Name</label>
-                            <input
-                              type="text"
-                              placeholder="Full name on card"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="">Country or Region</label>
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected>Open this select menu</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <div class="form-check">
-                              <div class="sb-checkbox">
-                                <input
-                                  type="checkbox"
-                                  class="sb-checkbox__input"
-                                  id="check2"
-                                  name="check2"
-                                />
-                                <label
-                                  class="sb-checkbox__label sb-checkbox__label--red"
-                                  for="check2"
-                                ></label>
-                              </div>
-                              <p>
-                                Securely save my information for 1 - click
-                                checkout
-                              </p>
-                            </div>
-                          </div>
-                          <div class="submit-btn">
-                            <button>Subscribe</button>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="tab-content feature-4 tab-item" id="feature-4">
+                      <div class="membership-right-content"></div>
+                    </div>
+                    <div class="tab-content feature-5 tab-item" id="feature-2">
+                      <div class="membership-right-content"></div>
                     </div>
                   </div>
                 </div>
@@ -543,8 +272,10 @@
         </div>
       </div>
     </section>
+    <!-- membership-body-mobile-view -->
+    <section class="membership-mobile-main membership-mobile-view"></section>
     <!-- footer-section -->
-    <div class="footer-section">
+    <section class="footer-section">
       <div class="container">
         <div class="footer-inner-section">
           <div class="row">
@@ -690,7 +421,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- scripts -->
     <script src="js/bootstrap.min.js"></script>
     <script>

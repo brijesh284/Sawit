@@ -10,20 +10,36 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light main-header">
       <div class="container">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="Logo" class="navbar-brand" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="navbar-logo">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 1C0 0.45 0.4275 0 0.95 0H18.05C18.5725 0 19 0.45 19 1C19 1.55 18.5725 2 18.05 2H0.95C0.4275 2 0 1.55 0 1ZM0 9C0 8.45 0.4275 8 0.95 8H18.05C18.5725 8 19 8.45 19 9C19 9.55 18.5725 10 18.05 10H0.95C0.4275 10 0 9.55 0 9ZM0 17C0 16.45 0.4275 16 0.95 16H12.35C12.8725 16 13.3 16.45 13.3 17C13.3 17.55 12.8725 18 12.35 18H0.95C0.4275 18 0 17.55 0 17Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Logo" class="navbar-brand" />
+          </a>
+        </div>
+
         <div
           class="collapse navbar-collapse nav-menu"
           id="navbarSupportedContent"
@@ -825,7 +841,7 @@
       </div>
     </section>
     <!-- footer-section -->
-    <div class="footer-section">
+    <section class="footer-section">
       <div class="container">
         <div class="footer-inner-section">
           <div class="row">
@@ -971,7 +987,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- scripts -->
     <script src="js/bootstrap.min.js"></script>
     <script>
