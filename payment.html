@@ -573,7 +573,148 @@
       </div>
     </section>
     <!-- payment-body-mobile-view -->
-    <section class="payment-mobile-main payment-mobile-view"></section>
+    <section class="payment-mobile-main payment-mobile-view">
+      <div class="payment-mobile-inner">
+        <h2>Select Payment Method</h2>
+        <div class="mobile-payment-list">
+          <div class="payment-list-img">
+            <img
+              src="img/razorpay-icon.svg"
+              alt="razorpay-icon"
+              class="img-fluid"
+            />
+          </div>
+          <div class="payment-list-img">
+            <img
+              src="img/paypal-icon.svg"
+              alt="paypal-icon"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div>
+          <ul class="accordion">
+            <li>
+              <a class="toggle" href="#">Credit Card</a>
+              <div class="payment-right-content mobile-wrap">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="card-information">
+                      <h3>paypal</h3>
+                    </div>
+                    <div class="form-group mt-0">
+                      <label for="">Contact Information</label>
+                      <input
+                        type="email"
+                        placeholder="Ak9075647599@gmail.com"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Card Information</label>
+                      <div class="information-input">
+                        <input
+                          type="number"
+                          placeholder="9-090 9075647 599 0000000"
+                        />
+                        <img
+                          src="img/visa-icon.svg"
+                          alt="visa-icon "
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="information-card-inner">
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="number" placeholder="MM/YY" />
+                          </div>
+                          <div class="col-6">
+                            <input type="number" placeholder="CVC" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Cardholder Name</label>
+                      <input type="text" placeholder="Full name on card" />
+                    </div>
+                    <div class="form-group">
+                      <label for="">Country or Region</label>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <div class="sb-checkbox">
+                          <input
+                            type="checkbox"
+                            class="sb-checkbox__input"
+                            id="check2"
+                            name="check2"
+                          />
+                          <label
+                            class="sb-checkbox__label sb-checkbox__label--red"
+                            for="check2"
+                          ></label>
+                        </div>
+                        <p>
+                          Securely save my information for 1 - click checkout
+                        </p>
+                      </div>
+                    </div>
+                    <div class="submit-btn">
+                      <button>Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a class="toggle" href="#">Apple Pay</a>
+              <p class="mobile-wrap">
+                Let's make a nice big leafy tree. You have to make those little
+                noises or it won't work. Let's put some happy little clouds in
+                our world. We don't really know where this goes - and I'm not
+                sure we really care. When you do it your way you can go anywhere
+                you choose. No worries. No cares. Just float and wait for the
+                wind to blow you around.
+              </p>
+            </li>
+
+            <li>
+              <a class="toggle" href="#">Card</a>
+              <p class="mobile-wrap">
+                Let's make a nice big leafy tree. You have to make those little
+                noises or it won't work. Let's put some happy little clouds in
+                our world. We don't really know where this goes - and I'm not
+                sure we really care. When you do it your way you can go anywhere
+                you choose. No worries. No cares. Just float and wait for the
+                wind to blow you around.
+              </p>
+            </li>
+
+            <li>
+              <a class="toggle" href="#">Paypal</a>
+              <p class="mobile-wrap">
+                Let's make a nice big leafy tree. You have to make those little
+                noises or it won't work. Let's put some happy little clouds in
+                our world. We don't really know where this goes - and I'm not
+                sure we really care. When you do it your way you can go anywhere
+                you choose. No worries. No cares. Just float and wait for the
+                wind to blow you around.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!-- footer-section -->
     <section class="footer-section">
       <div class="container">
@@ -724,6 +865,8 @@
     </section>
     <!-- scripts -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Web-view -->
     <script>
       function feature(e, featureClassName) {
         var element = document.getElementsByClassName("tab-item");
@@ -732,6 +875,24 @@
           element[i].classList.toggle("active", shouldBeActive);
         }
       }
+    </script>
+    <!-- mobile  -->
+    <script>
+      $(".toggle").click(function (e) {
+        e.preventDefault();
+
+        let $this = $(this);
+
+        if ($this.next().hasClass("show")) {
+          $this.next().removeClass("show");
+          $this.next().slideUp(350);
+        } else {
+          $this.parent().parent().find("li .mobile-wrap").removeClass("show");
+          $this.parent().parent().find("li .mobile-wrap").slideUp(350);
+          $this.next().toggleClass("show");
+          $this.next().slideToggle(350);
+        }
+      });
     </script>
   </body>
 </html>

@@ -2650,6 +2650,78 @@ h4 {
 .payment-mobile-view {
   display: none;
 }
+.payment-mobile-main {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  z-index: 9;
+  overflow: hidden;
+  min-height: 100vh;
+  margin-bottom: 50px;
+}
+.payment-mobile-main::after {
+  content: "";
+  position: absolute;
+  background-color: #29d9d9;
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 20px;
+  z-index: -1;
+}
+.payment-mobile-main .payment-mobile-inner {
+  padding: 40px 40px 40px 60px;
+}
+.payment-mobile-main .payment-mobile-inner h2 {
+  color: #fff;
+  font-size: 21px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.payment-mobile-inner .mobile-payment-list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  background: #fff;
+  padding: 8px 17px;
+  border-left: 3px solid #d9295e;
+}
+/*  */
+.accordion {
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.accordion .mobile-wrap {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+.accordion li a.toggle {
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+  font-family: Ultra-Regular;
+  text-decoration: none;
+}
+
+.accordion li a.toggle:hover {
+  border-bottom: 0.58px solid #ff9f00;
+}
+
 @media only screen and (max-width: 1199.5px) {
   .payment-access-section .payment-access-inner h2 {
     font-size: 32px;
@@ -2675,6 +2747,77 @@ h4 {
   }
   .payment-mobile-view {
     display: block;
+  }
+  .payment-right-content .card-information h3 {
+    font-size: 15px;
+  }
+  .payment-right-content .form-group label {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+  .payment-access-section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .payment-access-section .payment-access-inner {
+    padding: 20px;
+  }
+  .payment-access-section .payment-access-inner p {
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 14px;
+  }
+  .payment-access-section .payment-access-inner h2 {
+    font-size: 26px;
+  }
+  .payment-mobile-main::after {
+    left: 12px;
+  }
+  .payment-mobile-main .payment-mobile-inner {
+    padding: 40px 15px 40px 32px;
+  }
+  .payment-mobile-main .payment-mobile-inner h2 {
+    font-size: 18px;
+  }
+  .accordion {
+    padding-left: 10px;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .accordion li a.toggle {
+    font-size: 16px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+  }
+  .payment-right-content .form-group input,
+  .payment-right-content .form-group select {
+    padding: 12px 20px 12px 20px;
+    gap: 10px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .payment-right-content .form-group {
+    margin-top: 12px;
+  }
+  .accordion .mobile-wrap {
+    padding-left: 0px;
+  }
+  .payment-right-content .information-input img {
+    right: 20px;
+    width: 32px;
+  }
+  .payment-right-content .submit-btn {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .payment-right-content .submit-btn button {
+    font-size: 18px;
+    line-height: normal;
+    padding: 12px;
+    width: 220px;
   }
 }
 /* Profile-Membership-Page */
