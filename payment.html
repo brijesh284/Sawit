@@ -591,8 +591,8 @@
           </div>
         </div>
         <div>
-          <ul class="accordion">
-            <li>
+          <ul class="accordion" id="mobile-menu">
+            <li onclick="toggleClass(this)">
               <a class="toggle" href="#">Credit Card</a>
               <div class="payment-right-content mobile-wrap">
                 <div class="row">
@@ -674,7 +674,7 @@
               </div>
             </li>
 
-            <li>
+            <li onclick="toggleClass(this)">
               <a class="toggle" href="#">Apple Pay</a>
               <p class="mobile-wrap">
                 Let's make a nice big leafy tree. You have to make those little
@@ -686,7 +686,7 @@
               </p>
             </li>
 
-            <li>
+            <li onclick="toggleClass(this)">
               <a class="toggle" href="#">Card</a>
               <p class="mobile-wrap">
                 Let's make a nice big leafy tree. You have to make those little
@@ -698,7 +698,7 @@
               </p>
             </li>
 
-            <li>
+            <li onclick="toggleClass(this)">
               <a class="toggle" href="#">Paypal</a>
               <p class="mobile-wrap">
                 Let's make a nice big leafy tree. You have to make those little
@@ -891,6 +891,18 @@
           $this.next().slideToggle(350);
         }
       });
+    </script>
+    <script>
+      function toggleClass(element) {
+        // Remove 'active-Mobile' class from all <li> elements
+        var menuItems = document.querySelectorAll("#mobile-menu li");
+        menuItems.forEach(function (item) {
+          item.classList.remove("active-Mobile");
+        });
+
+        // Add 'active-Mobile' class to the clicked <li> element
+        element.classList.add("active-Mobile");
+      }
     </script>
   </body>
 </html>
